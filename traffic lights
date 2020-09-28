@@ -1,5 +1,9 @@
 // using 220 ohms of resistance //
 
+
+
+
+                                                                 ADD digotalWrite ( 00, LOW );
 void setup { 
 pinMode(2, OUTPUT);
 pinMode(3, OUTPUT);
