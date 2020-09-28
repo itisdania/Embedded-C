@@ -26,11 +26,29 @@ delay(400)
 
 
 //ANOTHER VERISON WITH BUTTONS // 
+
+if (digitalRead(7) == HIGH)
+}
+  digitalWrite(2, LOW);
+else
+  digitalWrite(2, HIGH);
+
+int RED = 2;
+int GREEN = 3;
+int BLUE = 4;
+int buttonRed = 7;
+int buttonGreen = 8; 
+int buttonBlue =9;
+
+
+
 void setup { 
 pinMode(2, OUTPUT);
 pinMode(3, OUTPUT);
 pinMode(4, OUTPUT);
 pinMode(7, INPUT);
+pinMode(8, INPUT);
+pinMode(9, INPUT);
 }
 
 void loop {
