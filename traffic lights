@@ -3,25 +3,36 @@
 
 
 
-                                                                 ADD digotalWrite ( 00, LOW );
-void setup { 
+                                                             
+void setup() { 
 pinMode(2, OUTPUT);
 pinMode(3, OUTPUT);
 pinMode(4, OUTPUT);
 }
 
-void loop {
-digitalWrite(2,HIGH)
-delay(400)
+void loop() {
+digitalWrite(2,HIGH);
+delay(4000);
 
-digitalWrite(3,HIGH)
-delay(400)
+digitalWrite(3,HIGH);
+delay(800);
 
-digitalWrite(4,HIGH)
-delay(400)
+digitalWrite(2,LOW);
+delay(0);
+digitalWrite(3,LOW);
+delay(400);
+
+
+digitalWrite(4,HIGH);
+delay(4000);
+digitalWrite(3,HIGH);
+delay(800);
+digitalWrite(4,LOW);
+delay(0);
+digitalWrite(3,LOW);
+delay(400);
 
 }
-
 
 
 
