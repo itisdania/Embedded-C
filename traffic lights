@@ -100,6 +100,7 @@ pinMode(4, OUTPUT);
 void loop() {
 
 LCD.clear();
+LCD.setCursor(5,0);
  LCD.print("Cross");
 
 
@@ -108,7 +109,9 @@ delay(8000);
 
 digitalWrite(3,HIGH);
 delay(800);
+
 LCD.clear();
+LCD.setCursor(2,0);
 LCD.print("Do Not Cross");
 
 digitalWrite(2,LOW);
@@ -116,11 +119,9 @@ delay(0);
 digitalWrite(3,LOW);
 delay(400);
 
+
 digitalWrite(4,HIGH);
 delay(8000);
-
-LCD.clear();
-LCD.print("Do Not Cross");
 
 digitalWrite(3,HIGH);
 delay(800);
@@ -128,4 +129,3 @@ digitalWrite(4,LOW);
 delay(0);
 digitalWrite(3,LOW);
 delay(400);}
-
