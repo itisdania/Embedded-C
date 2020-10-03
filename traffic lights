@@ -81,10 +81,15 @@ delay(400);}
 
 //ANOTHER VERISON WITH A LCD  // 
 
-     #include <LiquidCrystal.h>
-      const int rs = 12, en = 11, d4 = 10, d5 = 12, d6 = 13, d7 = 8;
-      LiquidCrystal LCD (rs , en ,d4 ,d5 ,d6, d7);
-      int button =1;                                             
+
+
+                                                             THIS IS THE MOST PERFECT VERSION 
+
+#include <LiquidCrystal.h>
+     const int rs = 5, en = 11, d4 = 10, d5 = 12, d6 = 13, d7 = 8;
+     LiquidCrystal LCD (rs , en ,d4 ,d5 ,d6, d7);
+      int button =7;      
+      int red = 2;                                       
 void setup() { 
 LCD.begin (16,2);
 pinMode(2, OUTPUT);
@@ -94,97 +99,33 @@ pinMode(4, OUTPUT);
 
 void loop() {
 
-  if (digitalRead(button) == HIGH)
-{
-digitalWrite(2,HIGH);
-delay(2000);
-digitalWrite(3,LOW);
-digitalWrite(4,LOW);
-  }
-  
+LCD.clear();
+ LCD.print("Cross");
 
- LCD.setCursor (0,0);
- LCD.print("dani is very cool");
 
- 
 digitalWrite(2,HIGH);
 delay(8000);
 
 digitalWrite(3,HIGH);
 delay(800);
+LCD.clear();
+LCD.print("Do Not Cross");
 
 digitalWrite(2,LOW);
 delay(0);
 digitalWrite(3,LOW);
 delay(400);
 
-
 digitalWrite(4,HIGH);
 delay(8000);
+
+LCD.clear();
+LCD.print("Do Not Cross");
+
 digitalWrite(3,HIGH);
 delay(800);
 digitalWrite(4,LOW);
 delay(0);
 digitalWrite(3,LOW);
 delay(400);}
-
-
-
-// digitalWrite(4, LOW);
-//  digitalWrite(3, LOW);
- // digitalWrite(2, HIGH);
- // delay(5000);
-
-
-/////////
-
-
-
-
-void setup() { 
-//LCD.begin (16,2);
-pinMode(2, OUTPUT);
-pinMode(3, OUTPUT);
-pinMode(4, OUTPUT);
-}
-
-void loop() {
-
-  if (digitalRead(button) == HIGH)
-{
-
-digitalWrite(3,LOW);
-digitalWrite(4,LOW);
-digitalWrite(2,HIGH);
-delay(2000);
-  }
-  
-
- //LCD.setCursor (0,0);
- //LCD.print("dani is very cool");
-
- 
-digitalWrite(2,HIGH);
-delay(8000);
-
-digitalWrite(3,HIGH);
-delay(800);
-
-digitalWrite(2,LOW);
-delay(0);
-digitalWrite(3,LOW);
-delay(400);
-
-
-digitalWrite(4,HIGH);
-delay(8000);
-digitalWrite(3,HIGH);
-delay(800);
-digitalWrite(4,LOW);
-delay(0);
-digitalWrite(3,LOW);
-delay(400);}
-
-
-
 
