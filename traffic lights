@@ -3,7 +3,7 @@
 
 int button = 7; 
 
-
+I ASSUME THIS DOES NOT WORK AS I DID NOT INCLUDE A A PINMODE FOR PIN 7 
                                                              
 void setup() { 
 pinMode(2, OUTPUT);
