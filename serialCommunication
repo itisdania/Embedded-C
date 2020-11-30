@@ -78,7 +78,27 @@ delay(500);
 
 
 
+/* receiver ardunio*/
+int button = 2; 
+char val;
+char message[18];
 
+void setup() {
+ Serial.begin(9600);
+
+}
+
+void loop() {
+   if (Serial.available() > 0) {
+Serial.readBytes(message,18);
+Serial.println(message);
+    delay(100); }
+
+
+
+    
+  } 
+  
 
 
 
