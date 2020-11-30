@@ -1,4 +1,4 @@
-/*Sender code */ with the thank you message 
+/*Sender code */ without the thank you message 
 
 int button = 7; 
 char message[18] = "Button Pressed";
@@ -11,3 +11,28 @@ void loop() {
 char buttonState = digitalRead(button);{
 if (buttonState == HIGH){
 Serial.write(message,18); }}}
+
+
+
+/* receiver ardunio*/
+int button = 7; 
+char val;
+char message[18];
+
+void setup() {
+ Serial.begin(9600);
+
+}
+
+void loop() {
+Serial.readBytes(message,18);
+
+  val = digitalRead(7) ;  // read input value
+   if (val == HIGH); {         // check if the input is HIGH (button released)
+ 
+    Serial.println(message);
+    delay(1);
+    
+  } 
+  
+}
