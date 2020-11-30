@@ -42,3 +42,52 @@ Serial.readBytes(message,18);
 
 
 Serial.available() > 0 to below the loop for the reciver 
+
+
+
+
+
+
+
+
+debugged code 
+
+
+/*Sender code */ WITHOUT "thank you"
+
+int button = 2; 
+char message[18] = "Button Pressed";
+
+void setup() {
+ pinMode(button, INPUT_PULLUP);
+Serial.begin(9600);
+}
+
+void loop() {
+char buttonState = digitalRead(button);{
+if (buttonState == LOW){
+Serial.write(message,18); 
+delay(500);
+}
+
+
+
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
