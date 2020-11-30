@@ -1,1 +1,13 @@
+/*Sender code */ with the thank you message 
 
+int button = 7; 
+char message[18] = "Button Pressed";
+ 
+void setup() {
+ pinMode(button, INPUT);
+Serial.begin(9600);
+}
+void loop() {
+char buttonState = digitalRead(button);{
+if (buttonState == HIGH){
+Serial.write(message,18); }}}
