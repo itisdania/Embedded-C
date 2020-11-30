@@ -36,3 +36,9 @@ Serial.readBytes(message,18);
   } 
   
 }
+
+
+
+
+
+Serial.available() > 0 to below the loop for the reciver 
