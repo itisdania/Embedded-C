@@ -1,0 +1,26 @@
+
+int profileButton = 8; //the pin where we connect the button
+int noprofileButton = 7;
+int LED = 2; //the pin we connect the LED
+int LED2 = 4;
+void setup() {
+  pinMode(profileButton, INPUT_PULLUP); //set the button pin as INPUT
+   pinMode(noprofileButton, INPUT_PULLUP);
+  pinMode(LED, OUTPUT); //set the LED pin as OUTPUT
+  pinMode(LED2, OUTPUT);
+}
+
+void loop() {
+  int stateButton = digitalRead(profileButton); //read the state of the button
+  if(stateButton == LOW) { //if is pressed
+     digitalWrite(LED, HIGH);//write 1 or HIGH to led pin
+     digitalWrite(LED2, LOW);
+     delay(900);
+      }
+
+ if( digitalRead(noprofileButton) == LOW) { //if is pressed
+     digitalWrite(LED2, HIGH);//write 1 or HIGH to led pin
+     digitalWrite(LED, LOW);
+     delay(900);}
+
+  
